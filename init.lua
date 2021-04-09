@@ -1,6 +1,7 @@
-require 'colorscheme'
+vim.g.mapleader = ''
 
+require 'utils'
 require 'plugins'
+require 'theme.colorscheme'
 
-require'lspconfig'.tsserver.setup{}
-
+require 'plugins.editor'
