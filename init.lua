@@ -1,7 +1,9 @@
-vim.g.mapleader = ''
+vim.g.mapleader = ' '
 
 require 'utils'
 require 'plugins'
 require 'theme.colorscheme'
+
+require 'settings'
 
 require 'plugins.editor'
