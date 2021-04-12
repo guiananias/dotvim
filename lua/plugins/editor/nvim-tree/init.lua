@@ -6,6 +6,10 @@ Variable.g({
 	nvim_tree_follow = 1,
 	nvim_tree_git_hl = 1,
 	nvim_tree_indent_markers = 1,
+	nvim_tree_allow_resize = 1,
+	nvim_tree_disable_netrw = 0,
+	nvim_tree_hijack_netrw = 0,
+	nvim_tree_root_folder_modifier = ':~',
 	nvim_tree_ignore = {
 		'.git', 
 		'node_modules',
