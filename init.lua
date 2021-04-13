@@ -8,3 +8,4 @@ require 'settings'
 
 require 'plugins.editor'
 require 'plugins.lsp'
+require 'plugins.nvim-compe'
