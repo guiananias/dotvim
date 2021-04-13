@@ -6,6 +6,7 @@ cmd('filetype plugin indent on')
 -- TODO: For some reason, this work, but remove this PLSSSSSSS
 cmd('set expandtab')
 cmd('set smarttab')
+cmd('set autoindent')
 cmd('set tabstop=2')
 cmd('set softtabstop=2')
 cmd('set shiftwidth=2')
@@ -38,12 +39,17 @@ Option.g({
 
   hidden = true,
 
-  clipboard = 'unnamedplus'
+  clipboard = 'unnamedplus',
+  backspace = 'indent,eol,start',
+
+  completeopt = 'menuone,noselect'
 })
 
 Option.w({
   number = true,
   signcolumn = 'yes',
+
+  colorcolumn = '80',
 
   cursorline = true			-- Highlight current line
 })
