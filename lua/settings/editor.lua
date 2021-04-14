@@ -3,14 +3,6 @@ local cmd = vim.api.nvim_command
 cmd('syntax on')
 cmd('filetype plugin indent on')
 
--- TODO: For some reason, this work, but remove this PLSSSSSSS
-cmd('set expandtab')
-cmd('set smarttab')
-cmd('set autoindent')
-cmd('set tabstop=2')
-cmd('set softtabstop=2')
-cmd('set shiftwidth=2')
-
 Option.g({
   textwidth = 80,
   wrap = false,
@@ -26,7 +18,7 @@ Option.g({
   smarttab = true,
   tabstop = 2,
   shiftwidth = 2,
-  
+
   splitbelow = true,
   splitright = true,
 
