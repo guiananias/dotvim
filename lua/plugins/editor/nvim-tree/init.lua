@@ -11,7 +11,7 @@ Variable.g({
 	nvim_tree_hijack_netrw = 0,
 	nvim_tree_root_folder_modifier = ':~',
 	nvim_tree_ignore = {
-		'.git', 
+		'.git',
 		'node_modules',
 		'.cache',
 	},
@@ -22,8 +22,3 @@ Variable.g({
 	}
 })
 
-local opt = { noremap = true, silent = true }
-
-Keybind.g({
-	{ 'n', '<C-b>', ':NvimTreeToggle<CR>', opt },
-}) 

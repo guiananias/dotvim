@@ -23,9 +23,3 @@ require('compe').setup({
   }
 })
 
-local opts = { noremap = true, silent = true, expr = true }
-
-Keybind.g({
-  { 'i', '<C-Space>', 'compe#complete()', opts },
-})
-
