@@ -25,7 +25,7 @@ return require("packer").startup(function (use)
   use 'kyazdani42/nvim-tree.lua'
   use 'vimwiki/vimwiki'
   use 'windwp/nvim-autopairs'
-  use 'glepnir/galaxyline.nvim'
+  use { 'glepnir/galaxyline.nvim', opt = true }
 
   use {
     'nvim-telescope/telescope.nvim',
