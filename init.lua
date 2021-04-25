@@ -8,4 +8,3 @@ require 'settings'
 
 require 'plugins.editor'
 require 'plugins.lsp'
-require 'plugins.tree-sitter'
