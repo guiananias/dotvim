@@ -1,0 +1,2 @@
+-- Insert here config variables to iamcco/markdown-preview plugin
+-- See docs here: https://github.com/iamcco/markdown-preview.nvim

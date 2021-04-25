@@ -21,7 +21,7 @@ return require("packer").startup(function (use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use { 'mg979/vim-visual-multi', branch = 'master' }
-  use 'iamcco/markdown-preview.nvim'
+  use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
   use 'kyazdani42/nvim-tree.lua'
   use 'vimwiki/vimwiki'
   use 'windwp/nvim-autopairs'
