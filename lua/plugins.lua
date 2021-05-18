@@ -26,6 +26,7 @@ return require("packer").startup(function (use)
   use 'vimwiki/vimwiki'
   use 'windwp/nvim-autopairs'
   use { 'glepnir/galaxyline.nvim', branch = 'main' }
+  use 'norcalli/nvim-colorizer.lua'
 
   use {
     'nvim-telescope/telescope.nvim',
