@@ -27,7 +27,6 @@ return require("packer").startup(function (use)
   use 'windwp/nvim-autopairs'
   use { 'glepnir/galaxyline.nvim', branch = 'main' }
   use 'norcalli/nvim-colorizer.lua'
-  use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua' }
 
   use {
     'nvim-telescope/telescope.nvim',
