@@ -3,8 +3,36 @@
 local silent_opts = { noremap = true, silent = true }
 local silent_expr_opts = { noremap = true, silent = true, expr = true }
 
--- Nvim Compe
+vim.g.mapleader = ' '
+
 Keybind.g({
+  -- editor
+
+  -- TODO: Improve this CTRL + S to save file
+  { 'n', '<C-s>', ':w<CR>', silent_opts },
+  { 'i', '<C-s>', '<Esc>:w<CR>a', silent_opts },
+
+  { 'n', '<C-c>', 'y$', silent_opts },
+  { 'i', '<C-c>', '<Esc>y$i', silent_opts },
+
+  { 'n', '<C-x>', 'dd', silent_opts },
+  { 'i', '<C-x>', '<C-o>dd', silent_opts },
+
+  -- CTRL + Z to undo the last change
+  { 'n', '<C-z>', ':u<CR>', silent_opts },
+  { 'i', '<C-z>', '<C-o>:u<CR>' },
+
+  -- Alt + Up Arrow to move line up
+  { 'n', '<A-Up>', ':m .-2<CR>==', silent_opts },
+  { 'i', '<A-Up>', '<Esc>:m .-2<CR>==gi', silent_opts },
+
+  -- Alt + Down Arrow to move line down
+  { 'n', '<A-Down>', ':m .+1<CR>==', silent_opts },
+  { 'i', '<A-Down>', '<Esc>:m .+1<CR>==gi', silent_opts },
+ 
+  -----------------------------------------------------------------------------
+  -- PLUGINS
+  -----------------------------------------------------------------------------
   -- nvim-compe
   { 'i', '<C-Space>', 'compe#complete()', silent_expr_opts },
   { 'i', '<CR>', 'compe#confirm("<CR>")', silent_expr_opts },
@@ -28,6 +56,13 @@ Keybind.g({
   { 'n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', silent_opts },
 
   -- nvim-tree
-  { 'n', '<C-b>', ':NvimTreeToggle<CR>', silent_opts }
+  { 'n', '<C-b>', ':NvimTreeToggle<CR>', silent_opts },
+
+  -- telescope.nvim
+  { 'n', '<Leader>p', [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], silent_opts },
+  { 'n', '<Leader>pb', [[<Cmd>lua require('telescope.builtin').buffers()<CR>]], silent_opts },
+  { 'n', '<Leader>ph', [[<Cmd>lua require('telescope.builtin').help_tags()<CR>]], silent_opts },
+  { 'n', '<Leader>p', [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], silent_opts },
+  { 'n', '<Leader>po', [[<Cmd>lua require('telescope.builtin').oldfiles()<CR>]], silent_opts }
 })
 
