@@ -28,6 +28,8 @@ return require("packer").startup(function (use)
   use { 'glepnir/galaxyline.nvim', branch = 'main' }
   use 'norcalli/nvim-colorizer.lua'
   use 'Yggdroot/indentLine'
+  use 'folke/trouble.nvim'
+  use 'sindrets/diffview.nvim'
 
   use {
     'nvim-telescope/telescope.nvim',
